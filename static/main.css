@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgb(247, 123, 216);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(247, 123, 216);
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.go_to {
+    color: rgb(110, 34, 81);
+    font-weight: bolder;
+    font-size:24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 160px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.go_to:visited {
+    color: rgb(110, 34, 81); 
+}
+
+.h1 {
+    color: rgb(110, 34, 81);
+    font-weight: bolder;
+    font-size:30px;
+}
+.error {
+    color: rgb(207, 2, 139);
+    font-weight: bolder;
+    font-size:24px;
+}
