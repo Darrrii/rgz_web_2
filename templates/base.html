@@ -38,7 +38,8 @@
         <li style="margin-right: 380px; font-size: 20px;"><a href="{{ url_for('base.basket') }}">Создать накладную</a></li>
         {% if current_user.is_authenticated %}
             <div style="padding:5px; margin-right: -180px; margin-top: 30px; font-size: 20px; border: 1px solid rgb(194, 47, 145);
-             background-color:rgb(206, 100, 190);  border-radius: 10px; margin-bottom: 50px; padding: 10px;"><a href="{{ url_for('base.logout') }}">Выйти</a></div>
+             background-color:rgb(206, 100, 190);  border-radius: 10px; margin-bottom: 50px; padding: 10px;">
+             <a href="{{ url_for('base.logout') }}">Выйти</a></div>
             <div style="font-size: 20px; margin-right: 150px; color: rgb(106, 7, 86); font-size:x-large;">Здравствуйте: {{ username }}!
             
             <DOCTYPE html>
@@ -55,12 +56,13 @@
             </html></div>
         {% else %}
             <div style="margin-right: -180px; font-size: 20px; border: 1px solid rgb(190, 42, 146); background-color:rgb(249, 174, 240);
-              border-radius: 10px; margin-bottom: 50px; padding: 10px;"><a href="{{ url_for('base.login') }}">Логин</a></div>
-            <div style="font-size: 20px; margin-right: 150px; margin-bottom: 50px; color: rgb(147, 19, 104);">{{ username }}, войдите в аккаунт, пожалуйста</div>
+              border-radius: 10px; margin-bottom: 50px; padding: 10px; margin-top: 30px;"><a href="{{ url_for('base.login') }}">Логин</a></div>
+            <div style="font-size: 20px; margin-right: 150px; margin-bottom: 50px; color: rgb(147, 19, 104);">
+                {{ username }}, войдите в аккаунт, пожалуйста</div>
         {% endif %}
     </ul>
 </div>
-<div class="text_hello" style="margin-left: 350px;">Добро пожаловать, складовщики!</div><br>
+<div class="text_hello" style="margin-left: 350px; color: rgb(109, 21, 80); font-size: xx-large;">Добро пожаловать, складовщики!</div><br>
 <div style="color: rgb(146, 6, 141); font-size:20px; margin-left: 70px;">
     На сайте склада бытовой техники вы сможете всегда быть в курсе наличия определенного товара и его количества, 
     отслеживать количество оплаченного товара, создавать накладные и отслеживать (корректировать) статусы заказов. 
