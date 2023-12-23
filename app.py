@@ -13,7 +13,7 @@ app.register_blueprint(base)
 app.secret_key = '123'
 user_db = 'dasha_knowledge_base_rgz'
 host_ip = '127.0.0.1'
-host_port = '5432'
+host_port = '3306'
 database_name = 'knowledge_base_rgz'
 password = '123'
 
